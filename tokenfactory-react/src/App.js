@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import web3 from './web3';
-import tokenFactory from './lottery';
+import tokenFactory from './tokenfactory';
 
 class App extends Component {
   state = {
@@ -14,8 +14,8 @@ class App extends Component {
   };
 
   async componentDidMount() {
-    //const players = await tokenFactory.methods.getPlayers().call();
-    const contracts = 'TEST';
+
+    const contracts = 'TEST'; //Eventually want to give parent contract a list of child contracts.
 
     this.setState({ contracts });
   }
